@@ -266,20 +266,3 @@ body {
     right: 0.4rem;
   }
 }
-
-@media (max-width: 500px) {
-  .work-media.row-3 {
-    grid-template-columns: 1fr 1fr;
-  }
-  .work-media.row-3 img:last-child {
-    grid-column: span 2;
-  }
-
-  .site-title {
-    font-size: 1.6rem;
-  }
-  .gallery {
-    gap: 3.5rem;
-    padding: 1rem 1rem 4rem;
-  }
-}
