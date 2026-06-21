@@ -2,7 +2,7 @@
   --bg: #faf8f5;
   --text: #1f1f1f;
   --muted: #6b6b6b;
-  --accent: #b5471b;
+  --accent: #1b89b5;
   --max-width: 760px;
 }
 
@@ -80,6 +80,7 @@ body {
   gap: 0.5rem;
 }
 
+.work-media.col-3,
 .work-media.col-2 {
   display: flex;
   flex-direction: column;
@@ -119,8 +120,8 @@ body {
 }
 
 .work-year {
-  color: var(--muted);
-  font-weight: normal;
+  color: var(--accent);
+  font-weight: bold;
 }
 
 .work-note {
