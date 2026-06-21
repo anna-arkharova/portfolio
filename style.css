@@ -103,7 +103,7 @@ body {
 
 .collage-sub {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-template-columns:  1fr 1fr 1fr;
   gap: 0.5rem;
 }
 
