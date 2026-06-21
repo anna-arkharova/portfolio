@@ -44,12 +44,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const index = galleryImages.indexOf(img);
     showImage(index);
     lightbox.classList.add('open');
+    history.pushState({ lightbox: true }, '');
   }
 
   function closeLightbox() {
     lightbox.classList.remove('open');
     lightboxImg.src = '';
     currentIndex = -1;
+    if (history.state && history.state.lightbox) {
+      history.back();
+    }
   }
 
   function showPrev() {
@@ -83,5 +87,13 @@ document.addEventListener('DOMContentLoaded', () => {
     if (e.key === 'Escape') closeLightbox();
     if (e.key === 'ArrowLeft') showPrev();
     if (e.key === 'ArrowRight') showNext();
+  });
+
+  window.addEventListener('popstate', () => {
+    if (lightbox.classList.contains('open')) {
+      lightbox.classList.remove('open');
+      lightboxImg.src = '';
+      currentIndex = -1;
+    }
   });
 });
