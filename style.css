@@ -252,17 +252,3 @@ body {
 .lightbox-next {
   right: 1rem;
 }
-
-@media (max-width: 500px) {
-  .lightbox-arrow {
-    width: 2.4rem;
-    height: 2.4rem;
-    font-size: 2rem;
-  }
-  .lightbox-prev {
-    left: 0.4rem;
-  }
-  .lightbox-next {
-    right: 0.4rem;
-  }
-}
