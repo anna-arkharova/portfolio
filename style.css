@@ -101,9 +101,15 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-.collage-sub {
+.collage-sub-3 {
   display: grid;
   grid-template-columns:  1fr 1fr 1fr;
+  gap: 0.5rem;
+}
+
+.collage-sub-2 {
+  display: grid;
+  grid-template-columns:  1fr 1fr;
   gap: 0.5rem;
 }
 
