@@ -103,8 +103,12 @@ body {
 
 .collage-sub-3 {
   display: grid;
-  grid-template-columns:  1fr 1fr 1fr;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 0.5rem;
+}
+.collage-sub-3 > * {
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
 }
 
 .collage-sub-2 {
